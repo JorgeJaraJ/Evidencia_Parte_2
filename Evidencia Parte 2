@@ -1,0 +1,146 @@
+Proceso DiagnosticoDePacientes
+
+Escribir que puesto tienes:
+1. Administrador
+2. Paciente
+3. Medico
+Leer "puesto"
+
+Si Respuesta = "Administrador"
+Solicitar nombreUsuario
+Solicitar contraseñaAdmin
+Escribir Opción Que Se Quiere Realizar
+1. Dar Alta Medico
+2. Quitar Medico
+3. Dar Alta Paciente
+4. Quitar Paciente
+5. Ingresar Paciente
+6. Salir
+
+Leer Respuesta:
+
+Si Respuesta = "1"
+Dar alta medico
+
+Solicitar nombreMedico
+Solicitar 
+    Escribir Sin Saltar "Ingresa el nombre del medico";
+    Leer nombre del medico;
+    Escribir Sin Saltar "especialidad del medico:";
+    Leer especialidad del medico;
+    Escribir Sin Saltar "Ingresa la edad:";
+    Leer edad;
+
+Escribir "Vas a realizar otra acción"
+Leer respuesta:
+Si respuesta = "Si"
+Regresar al menú principal
+
+No salir;
+
+Si respuesta = "2"
+Quitar medico
+Solicitar nombreMedico
+Borrar medico
+
+Escribir "Vas a realizar otra acción"
+Leer respuesta:
+Si respuesta = "Si"
+Regresar al menú principal
+
+No salir;
+
+Si respuesta = "3"
+Dar alta paciente
+Solicitar nombrePaciente
+    Escribir Sin Saltar "Ingresa el nombre del paciente";
+    Leer nombre del paciente;
+    Escribir Sin Saltar "Ingresa enfermedad:";
+    Leer enfermedad;
+    Escribir Sin Saltar "Ingresa la edad:";
+    Leer edad;
+
+   Escribir "Vas a realizar otra acción"
+   Leer respuesta:
+   Si respuesta = "Si"
+   Regresar al menú principal
+
+No salir;
+
+Si respuesta ="4"
+Quitar paciente
+
+Escribir nombrePaciente
+Borrar Paciente
+
+Escribir "Vas a realizar otra acción"
+Leer respuesta:
+Si respuesta = "Si"
+Regresar al menú principal
+
+No salir;
+
+Si respuesta = "5"
+Ingresar Paciente
+
+Escribir "Vas a realizar otra acción"
+Leer respuesta:
+Si respuesta = "Si"
+Regresar al menú principal
+
+No salir;
+
+Si respuesta = "6"
+Salir
+
+*****************************************************************************************************************
+Si respuesta = 2
+
+Escribir "coloca tu nombre":
+Leer nombrePaciente:
+
+Escribir "coloca tu edad"
+Leer edadPaciente:
+
+Escribir " Coloca tu sexo M/F"
+Leer sexoPaciente:
+
+Escribir "Coloca tu fecha de nacimiento"
+Leer fechaNacimiento:
+
+Escribir "Coloca tu nacionalidad"
+Leer nacionalidadPaciente:
+
+Escribir "Que departamento buscas"
+Leer depPaciente:
+
+Generar ID automático
+*****************************************************************************************************************
+Si respuesta = 3
+
+Escribir "coloca tu nombre":
+Leer nombreMedico:
+
+Escribir "coloca tu edad"
+Leer edadMedico:
+
+Escribir " Coloca tu sexo M/F"
+Leer sexoMedico:
+
+Escribir "Coloca tu fecha de nacimiento"
+Leer fechaMedico:
+
+Escribir "Coloca tu disponibilidad"
+Leer disponibilidad:
+
+Escribir "Que especialidad tienes"
+Leer especialidad:
+
+Generar ID automático
+*****************************************************************************************************************
+
+Una vez que ya se ha colocado el nombre del medico y del paciente, el administrador es la única persona que puede generar la cita, por lo que al final de cada registro es necesario que se regrese al menú principal, en donde se almacenarán todos los datos de los pacientes y médicos, con lo cual se creará la cita, y una vez finalziada la cita, se le preguntará al médico si todo esta bien o es necesario crear otra cita
+
+
+
+    
